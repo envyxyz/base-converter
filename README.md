@@ -4,15 +4,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/envyxyz/base-converter">
-    <img src="images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter: invert(1);">
+    <img src="images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter: invert();">
   </a>
 
 <h3 align="center">Base Conversion Calculator</h3>
 
   <p align="center">
     A calculator that converts binary, octal, decimal and hexa-decimals into one another.
-    <br />
-    <a href="https://github.com/envyxyz/base-converter"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/envyxyz/base-converter">View Demo</a>
@@ -23,7 +21,7 @@
   </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE OF CONTENTS
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -47,7 +45,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
+</details> -->
 
 <!-- ABOUT THE PROJECT -->
 
