@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/envyxyz/base-converter">
-    <img src="images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter: invert();">
+    <img src="images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter:invert(1);">
   </a>
 
 <h3 align="center">Base Conversion Calculator</h3>
