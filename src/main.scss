@@ -1,6 +1,35 @@
+@import "_mixin";
 $accent: #000;
 
 body,
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F1;
+    height: 100vh
+}
+
+nav {
+    $mg: 12px;
+    @include flex-container(row, center, space-between);
+    // background-color: red;
+    background-color: #f7f6f6;
+    box-shadow: 0 0 25px -5px #0000003f;
+    width: 100%;
+    padding: $mg calc($mg * 3);
+
+    .logo_container {
+        img.logo {
+            height: 48px
+        }
+    }
+
+    .nav_right {
+        @include flex-container(row, center, space-between);
+        gap: 1em
+    }
 }

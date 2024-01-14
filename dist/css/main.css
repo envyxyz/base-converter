@@ -1,4 +1,32 @@
 body,
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F1F1F1;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f6f6;
+  box-shadow: 0 0 25px -5px rgba(0, 0, 0, 0.2470588235);
+  width: 100%;
+  padding: 12px 36px;
+}
+nav .logo_container img.logo {
+  height: 48px;
+}
+nav .nav_right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
 }/*# sourceMappingURL=main.css.map */
