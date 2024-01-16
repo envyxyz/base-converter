@@ -131,12 +131,13 @@ body {
     }
 
     footer {
-        $mg: 12px;
-        @include flex-container(row, flex-end, flex-end);
+        $mg: 8px;
+        @include flex-container(row, flex-end, space-between);
         width: 100%;
         padding: $mg calc($mg * 3);
 
-        a {
+        a,
+        p {
             color: rgb(135 135 135);
         }
     }
