@@ -1,0 +1,18 @@
+body.dark_mode {
+    background-color: rgb(40 40 40);
+
+    img {
+        filter: invert(1);
+    }
+
+    nav {
+        background-color: rgb(60 60 60);
+    }
+
+    input,
+    select {
+        background-color: rgb(60 60 60) !important;
+        color: #fff;
+        border-color: #fff;
+    }
+}

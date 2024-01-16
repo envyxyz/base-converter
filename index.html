@@ -46,6 +46,59 @@
           </div>
         </div>
       </nav>
+      <div class="calculator_holder">
+        <div class="base_selectors">
+          <div class="selector input">
+            <select name="base_dropdown" id="selector_drop" class="drop">
+              <option value="Binary">Binary</option>
+              <option value="Octal">Octal</option>
+              <option value="Decimal">Decimal</option>
+              <option value="Hexa-Decimal">Hexa-Decimal</option>
+            </select>
+          </div>
+          <div class="convert_icon">
+            <img src="./assets/images/convert.png" alt="convert_icon" />
+          </div>
+          <div class="selector output">
+            <select name="base_dropdown" id="selector_drop">
+              <option value="Binary">Binary</option>
+              <option value="Octal">Octal</option>
+              <option value="Decimal" selected>Decimal</option>
+              <option value="Hexa-Decimal">Hexa-Decimal</option>
+            </select>
+          </div>
+        </div>
+        <div class="value_inputs">
+          <div class="value_input">
+            <input
+              type="number"
+              inputmode="numeric"
+              pattern="[0-1]"
+              name="conversion_inputs"
+              id="input"
+              placeholder="Enter Value"
+              oninput="binToDec()"
+            />
+          </div>
+          <div></div>
+          <div class="value_input">
+            <input
+              type="number"
+              name="conversion_inputs"
+              id="output"
+              placeholder="Output"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <a
+          href="https://github.com/envyxyz/base-converter/issues"
+          target="_blank"
+          >Report a bug</a
+        >
+      </footer>
     </div>
   </body>
 </html>
