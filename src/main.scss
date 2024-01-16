@@ -30,6 +30,32 @@ nav {
 
     .nav_right {
         @include flex-container(row, center, space-between);
-        gap: 1em
+        gap: 1em;
+
+        .theme_btn {
+            &.active {
+                img {
+                    filter: invert(1);
+                    rotate: 180deg;
+                }
+            }
+        }
+
+        .repository_link {
+            img {
+                width: 44px;
+            }
+        }
+
+        .nav_btn_icon {
+            width: 48px;
+            cursor: pointer;
+            transition-duration: 250ms;
+
+            &:hover {
+                opacity: 0.8;
+                scale: 0.95;
+            }
+        }
     }
 }

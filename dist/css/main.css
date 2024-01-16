@@ -29,4 +29,20 @@ nav .nav_right {
   align-items: center;
   justify-content: space-between;
   gap: 1em;
+}
+nav .nav_right .theme_btn.active img {
+  filter: invert(1);
+  rotate: 180deg;
+}
+nav .nav_right .repository_link img {
+  width: 44px;
+}
+nav .nav_right .nav_btn_icon {
+  width: 48px;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+nav .nav_right .nav_btn_icon:hover {
+  opacity: 0.8;
+  scale: 0.95;
 }/*# sourceMappingURL=main.css.map */
