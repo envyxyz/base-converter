@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/envyxyz/base-converter">
-    <img src="images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter:invert(1);">
+  <a href="https://envyxyz.github.io/base-converter">
+    <img src="./assets/images/favicon_dark.ico" alt="Logo" width="80" height="80" style="filter:invert(1);">
   </a>
 
 <h3 align="center">Base Conversion Calculator</h3>
@@ -13,7 +13,7 @@
     A calculator that converts binary, octal, decimal and hexa-decimals into one another.
     <br />
     <br />
-    <a href="https://github.com/envyxyz/base-converter">View Demo</a>
+    <a href="https://envyxyz.github.io/base-converter">View Demo</a>
     ·
     <a href="https://github.com/envyxyz/base-converter/issues">Report Bug</a>
     ·
