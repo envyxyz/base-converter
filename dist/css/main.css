@@ -180,4 +180,12 @@ input::-webkit-inner-spin-button {
   .container .calculator_holder .base_selectors .convert_icon img {
     width: 28px;
   }
+  input,
+  select {
+    border-radius: 0 !important;
+    font-size: 16px !important;
+    width: 150px !important;
+    height: 42PX;
+    padding: 2px !important;
+  }
 }/*# sourceMappingURL=main.css.map */
