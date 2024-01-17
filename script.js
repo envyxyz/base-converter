@@ -1,10 +1,13 @@
 let theme_button = document.querySelector(".theme_btn");
+let bg_circle = document.querySelector(".circle");
 var user_Input = document.getElementById("input");
 var converted_output = document.querySelector("#output");
+var error_msg = document.querySelector(".error_msg");
 
 theme_button.addEventListener("click", () => {
   document.body.classList.toggle("dark_mode");
   theme_button.classList.toggle("active");
+  bg_circle.classList.toggle("active");
 });
 
 // Binary To Decimal
@@ -43,6 +46,7 @@ user_Input.addEventListener("keydown", function (event) {
     event.preventDefault();
     // console.error("Enter Correct Value");
     user_Input.classList.add("error");
+    error_msg.classList.add("active");
   }
 });
 
@@ -54,10 +58,12 @@ user_Input.addEventListener("blur", function () {
   if (user_Input.value.match(/[^01]/)) {
     console.error("Enter Correct Value");
     user_Input.classList.add("error");
+    error_msg.classList.add("active");
     user_Input.focus();
   } else {
     // If only binary characters are present, remove the error class
     user_Input.classList.remove("error");
+    error_msg.classList.add("active");
   }
 });
 
