@@ -48,7 +48,6 @@
         .circle {
             position: fixed;
             height: 50px;
-            background-color: rgb(40 40 40);
             aspect-ratio: 1;
             top: 10px;
             border-radius: 100%;
@@ -59,6 +58,7 @@
             transition-timing-function: ease-out;
 
             &.active {
+                background-color: rgb(40 40 40);
                 scale: 100;
             }
         }
