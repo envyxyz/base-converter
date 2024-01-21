@@ -12,6 +12,42 @@
     margin-left: 0rem;
   }
 }
+@media (max-width: 45.0625em) {
+  nav {
+    padding: 6px 18px !important;
+  }
+  .error_msg {
+    top: 4em;
+  }
+  .calculator_holder {
+    gap: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .container .calculator_holder .base_selectors {
+    gap: 10px;
+  }
+  .container .calculator_holder .value_inputs {
+    gap: 1.35em;
+  }
+  .container .calculator_holder .base_selectors .convert_icon img {
+    width: 28px;
+  }
+  input,
+  select {
+    border-radius: 0 !important;
+    font-size: 16px !important;
+    width: 150px !important;
+    height: 42PX;
+    padding: 2px !important;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body.dark_mode img:not([alt=alert]) {
   filter: invert(1);
 }
@@ -69,7 +105,6 @@ body img {
 .circle {
   position: fixed;
   height: 50px;
-  background-color: rgb(40, 40, 40);
   aspect-ratio: 1;
   top: 10px;
   border-radius: 100%;
@@ -80,6 +115,7 @@ body img {
   transition-timing-function: ease-out;
 }
 .circle.active {
+  background-color: rgb(40, 40, 40);
   scale: 100;
 }
 
@@ -201,40 +237,4 @@ body img {
   color: rgb(135, 135, 135);
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-@media (max-width: 45.0625em) {
-  nav {
-    padding: 6px 18px !important;
-  }
-  .error_msg {
-    top: 4em;
-  }
-  .calculator_holder {
-    gap: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  .container .calculator_holder .base_selectors {
-    gap: 10px;
-  }
-  .container .calculator_holder .value_inputs {
-    gap: 1.35em;
-  }
-  .container .calculator_holder .base_selectors .convert_icon img {
-    width: 28px;
-  }
-  input,
-  select {
-    border-radius: 0 !important;
-    font-size: 16px !important;
-    width: 150px !important;
-    height: 42PX;
-    padding: 2px !important;
-  }
-}/*# sourceMappingURL=main.css.map */
+/* Chrome, Safari, Edge, Opera *//*# sourceMappingURL=main.css.map */
