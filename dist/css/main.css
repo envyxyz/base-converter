@@ -106,7 +106,7 @@ body img {
   position: fixed;
   height: 50px;
   aspect-ratio: 1;
-  top: 10px;
+  top: -20px;
   border-radius: 100%;
   left: unset;
   right: 96px;
