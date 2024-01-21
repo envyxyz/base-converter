@@ -15,10 +15,6 @@
   </head>
 
   <body>
-    <div class="error_msg">
-      <img src="./assets/images/alert.svg" alt="alert" height="16" width="16" />
-      Invalid Input
-    </div>
     <div class="circle"></div>
     <div class="container">
       <nav class="nav_bar">
@@ -52,10 +48,10 @@
           </div>
         </div>
       </nav>
-      <div class="calculator_holder">
+      <main class="calculator_holder">
         <div class="base_selectors">
           <div class="selector input">
-            <select name="base_dropdown" id="selector_drop" class="drop">
+            <select name="base_dropdown" id="selector_in" class="drop">
               <option value="Binary">Binary</option>
               <option value="Octal">Octal</option>
               <option value="Decimal">Decimal</option>
@@ -66,7 +62,7 @@
             <img src="./assets/images/convert.png" alt="convert_icon" />
           </div>
           <div class="selector output">
-            <select name="base_dropdown" id="selector_drop">
+            <select name="base_dropdown" id="selector_out">
               <option value="Binary">Binary</option>
               <option value="Octal">Octal</option>
               <option value="Decimal" selected>Decimal</option>
@@ -97,7 +93,7 @@
             />
           </div>
         </div>
-      </div>
+      </main>
       <footer class="footer">
         <p>made by envyxyz7</p>
         <a
