@@ -24,7 +24,7 @@
 
 ## About The Project
 
-> a calculator that converts binary, octal, decimal and hexa-decimals into one another.
+> a calculator that converts binary into decimal and one another.
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
