@@ -24,7 +24,7 @@
 
 ## About The Project
 
-> a calculator that converts binary into decimal and one another.
+> a calculator that converts binary into decimal and vice versa.
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
