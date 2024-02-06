@@ -2,9 +2,6 @@ let theme_button = document.querySelector(".theme_btn");
 let bg_circle = document.querySelector(".circle");
 var user_Input = document.getElementById("input");
 var converted_output = document.querySelector("#output");
-var option_in = document.querySelector("#selector_in");
-var option_out = document.querySelector("#selector_out");
-let invert_integer = 1;
 
 theme_button.addEventListener("click", () => {
   document.body.classList.toggle("dark_mode");
@@ -14,15 +11,7 @@ theme_button.addEventListener("click", () => {
 
 // Binary To Decimal
 
-function conversion() {
-  if (option_in.value == "Binary") {
-    binaryToDecimal();
-  } else if (option_in.value == "Decimal") {
-    console.log("NIGGA WANTS TO CONVERT FROM DECIMAL TO BINARY");
-  }
-}
-
-function binaryToDecimal() {
+function binToDec() {
   var input_value = user_Input.value;
   var input_length = user_Input.value.length;
   let pwr = input_length - 1;
@@ -38,51 +27,45 @@ function binaryToDecimal() {
       converted_output.value = result;
     }
   }
-  user_Input.addEventListener("keydown", function (event) {
-    if (
-      !(
-        event.key === "0" ||
-        event.key === "1" ||
-        event.key === "Backspace" ||
-        (event.ctrlKey &&
-          (event.key === "a" || event.key === "c" || event.key === "v"))
-      )
-    ) {
-      event.preventDefault();
-      user_Input.classList.add("error");
-    }
-  });
-
-  user_Input.addEventListener("blur", function () {
-    user_Input.value = user_Input.value.replace(/[^01]/g, "");
-
-    if (user_Input.value.match(/[^01]/)) {
-      console.error("Enter Correct Value");
-      user_Input.classList.add("error");
-      user_Input.focus();
-    } else {
-      user_Input.classList.remove("error");
-    }
-  });
-
-  user_Input.addEventListener("focusout", function () {
-    if (!user_Input.value.match(/[^01]/)) {
-      user_Input.classList.remove("error");
-    }
-  });
 }
 
-function invert() {
-  invert_integer++;
-  if (invert_integer % 2 == 0) {
-    option_in.value = "Decimal";
-    option_out.value = "Binary";
-  } else {
-    option_in.value = "Binary";
-    option_out.value = "Decimal";
+// Binary Input
+
+user_Input.addEventListener("keydown", function (event) {
+  // Allow '0', '1', backspace, and keyboard shortcuts (Ctrl+A, Ctrl+C, Ctrl+V)
+  if (
+    !(
+      event.key === "0" ||
+      event.key === "1" ||
+      event.key === "Backspace" ||
+      (event.ctrlKey &&
+        (event.key === "a" || event.key === "c" || event.key === "v"))
+    )
+  ) {
+    event.preventDefault();
+    // console.error("Enter Correct Value");
+    user_Input.classList.add("error");
   }
-  converted_output.value = "";
-  user_Input.value = "";
+});
 
-  console.log(invert_integer);
-}
+user_Input.addEventListener("blur", function () {
+  // Remove any non-binary characters when focus is lost
+  user_Input.value = user_Input.value.replace(/[^01]/g, "");
+
+  // Check if there are non-binary characters
+  if (user_Input.value.match(/[^01]/)) {
+    console.error("Enter Correct Value");
+    user_Input.classList.add("error");
+    user_Input.focus();
+  } else {
+    // If only binary characters are present, remove the error class
+    user_Input.classList.remove("error");
+  }
+});
+
+user_Input.addEventListener("focusout", function () {
+  // Remove the error class when the user focuses out and the input is correct
+  if (!user_Input.value.match(/[^01]/)) {
+    user_Input.classList.remove("error");
+  }
+});
