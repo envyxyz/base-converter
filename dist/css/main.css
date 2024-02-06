@@ -198,9 +198,6 @@ body img {
   pointer-events: none;
   transition-duration: 450ms;
 }
-.container .calculator_holder .base_selectors .convert_icon {
-  cursor: pointer;
-}
 .container .calculator_holder .base_selectors .convert_icon img {
   width: 38px;
 }
