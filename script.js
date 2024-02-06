@@ -12,7 +12,7 @@ theme_button.addEventListener("click", () => {
   bg_circle.classList.toggle("active");
 });
 
-// Binary To Decimal
+// Functions
 
 function conversion() {
   if (option_in.value == "Binary") {
