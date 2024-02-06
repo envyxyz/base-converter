@@ -53,20 +53,20 @@
           <div class="selector input">
             <select name="base_dropdown" id="selector_in" class="drop">
               <option value="Binary">Binary</option>
-              <option value="Octal">Octal</option>
               <option value="Decimal">Decimal</option>
-              <option value="Hexa-Decimal">Hexa-Decimal</option>
             </select>
           </div>
-          <div class="convert_icon">
-            <img src="./assets/images/convert.png" alt="convert_icon" />
+          <div class="convert_icon" onclick="invert();">
+            <img
+              src="./assets/images/convert.png"
+              alt="convert_icon"
+              draggable="false"
+            />
           </div>
           <div class="selector output">
             <select name="base_dropdown" id="selector_out">
               <option value="Binary">Binary</option>
-              <option value="Octal">Octal</option>
               <option value="Decimal" selected>Decimal</option>
-              <option value="Hexa-Decimal">Hexa-Decimal</option>
             </select>
           </div>
         </div>
@@ -75,11 +75,11 @@
             <input
               type="number"
               inputmode="numeric"
-              pattern="[0-1]"
+              pattern="[01]"
               name="conversion_inputs"
               id="input"
               placeholder="Enter Value"
-              oninput="binToDec()"
+              oninput="conversion()"
             />
           </div>
           <div></div>
